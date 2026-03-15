@@ -1,0 +1,99 @@
+{
+  "courses": [
+    {
+      "id": "4344",
+      "title": "Blockchainutvecklare",
+      "courseNumber": "006",
+      "days": 90,
+      "price": 10000,
+      "date": "2026-05-01",
+      "mode": "Distans",
+      "image": "assets/images/blockchain.png",
+      "description": "En utbildning som lär dig utveckling och programmering av blockkedjebaserade system, som är tekniken bakom digitala valutor, smarta kontrakt och nästa generations tjänster. Du får både teknisk spets och förståelse för affär, juridik och samhällspåverkan, vilket gör dig starkt efterfrågad på arbetsmarknaden.",
+      "popular": true
+    },
+    {
+      "id": "ed90",
+      "title": "Front End Developer",
+      "courseNumber": "001",
+      "days": 60,
+      "price": 7000,
+      "date": "2026-04-24",
+      "mode": "Klassrum",
+      "image": "assets/images/frontend.jpg",
+      "description": "Avancerad webbutveckling med fokus på form och funktion\nFör dig som vill arbeta med professionell webbutveckling från idé till avancerade webbplatser för olika plattformar och enheter.",
+      "popular": true
+    },
+    {
+      "id": "58db",
+      "title": "UX-designer",
+      "courseNumber": "007",
+      "days": 60,
+      "price": 8000,
+      "date": "2026-04-30",
+      "mode": "Klassrum",
+      "image": "assets/images/ux-designer.png",
+      "description": "Skapa användarvänliga digitala upplevelser\nÄr du kreativ och samtidigt analytisk? Här lär du dig verktygen för att skapa användarvänliga och effektiva digitala lösningar. Du lär dig bland annat designprinciper, prototypframställning och användartestning, allt för att möta branschens växande behov."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Freddy",
+      "address": "Bellagio Residences tower 1 unit 5K, Bonifacio Global City, Taguig, Metro Manila, Philippines",
+      "email": "freddy.kallefjord@medieinstitutet.se",
+      "phone": "00639150725060",
+      "admin": false
+    },
+    {
+      "id": "2",
+      "name": "Admin",
+      "address": "",
+      "email": "admin@admin.com",
+      "phone": "",
+      "admin": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "080a",
+      "courseId": "4344",
+      "userId": "1",
+      "attendance": "distans",
+      "createdAt": "2026-03-13T09:02:52.477Z",
+      "customer": {
+        "name": "Freddy Källefjord",
+        "address": "Bellagio Residences tower 1 unit 5K, Bonifacio Global City, Taguig, Metro Manila, Philippines",
+        "email": "freddy.kallefjord@medieinstitutet.se",
+        "phone": "00639150725060"
+      }
+    },
+    {
+      "id": "42cd",
+      "courseId": "4344",
+      "userId": "1",
+      "attendance": "distans",
+      "createdAt": "2026-03-14T07:47:01.616Z",
+      "customer": {
+        "name": "Freddy",
+        "address": "sverige",
+        "email": "freddy.kallefjord@medieinstitutet.se",
+        "phone": "000"
+      }
+    },
+    {
+      "id": "655e",
+      "courseId": "58db",
+      "userId": "1",
+      "attendance": "klassrum",
+      "createdAt": "2026-03-14T08:36:27.786Z",
+      "customer": {
+        "name": "Åke",
+        "address": "Skövde",
+        "email": "ake@ake.com",
+        "phone": "00"
+      }
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

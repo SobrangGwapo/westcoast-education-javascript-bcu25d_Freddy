@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.4;
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding: 12px;
+}
+
+main {
+  max-width: 960px;
+  margin: 18px auto;
+  padding: 0 12px;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+section {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 12px 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+article {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 10px 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#coursesList,
+#currentCourses,
+#popularCourses {
+  display: grid;
+  gap: 12px;
+}
+
+#coursesList article,
+#popularCourses article {
+  display: grid;
+  gap: 6px;
+}
+
+.admin-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.booking-item {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+#coursesList a,
+#popularCourses a,
+main section a,
+#tillbaka {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0b5fff;
+  text-decoration: underline;
+}
+
+#coursesList img,
+#courseDetails img,
+#popularCourses img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+#loginMsg,
+#formErrors,
+#bookingMsg,
+#adminMsg,
+#adminLoginMsg {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+}
+
+#formErrors {
+  border-color: #c00;
+}
+
+#bookingMsg,
+#loginMsg,
+#adminMsg,
+#adminLoginMsg {
+  border-color: #0b5fff;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 1px solid #c00;
+}
+
+@media (min-width: 800px) {
+  #coursesList {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}

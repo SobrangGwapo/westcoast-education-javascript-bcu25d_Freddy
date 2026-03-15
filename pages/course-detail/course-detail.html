@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="../../css/site.css" />
+    <script type="module" src="./course-detail.js" defer></script>
+    <title>WestCoast Education - Kursdetaljer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../start/start.html">Start</a>
+        <a href="../courses/courses.html">Kurser</a>
+        <a href="../admin/admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <a href="./courses.html" id="tillbaka">← Tillbaka</a>
+
+      <h1>Kursdetaljer</h1>
+
+      <div id="pageStatus" aria-live="polite" hidden></div>
+
+      <section id="courseDetails"></section>
+
+      <hr />
+
+      <section aria-labelledby="accountTitle">
+        <h2 id="accountTitle">Logga in eller skapa konto</h2>
+
+        <fieldset>
+          <legend>Jag har redan ett konto</legend>
+
+          <label>
+            E-post
+            <input id="loginEmail" name="loginEmail" type="email" autocomplete="email" />
+          </label>
+
+          <button type="button" id="loginBtn">Logga in</button>
+
+          <div id="loginMsg" aria-live="polite" hidden></div>
+        </fieldset>
+
+        <p>— eller —</p>
+        <p>Skapa konto genom att fylla i uppgifterna i bokningen nedan.</p>
+      </section>
+
+      <hr />
+
+      <section aria-labelledby="bookingTitle">
+        <h2 id="bookingTitle">Boka kurs</h2>
+
+        <div id="formErrors" aria-live="polite" hidden></div>
+        <div id="bookingMsg" aria-live="polite" hidden></div>
+
+        <form id="bookingForm" novalidate>
+          <fieldset>
+            <legend>Välj deltagandeform</legend>
+            <label>
+              <input type="radio" name="attendance" value="klassrum" checked />
+              Klassrum
+            </label>
+            <label>
+              <input type="radio" name="attendance" value="distans" />
+              Distans
+            </label>
+          </fieldset>
+
+          <label>
+            Kundnamn
+            <input name="name" autocomplete="name" />
+          </label>
+
+          <label>
+            Faktureringsadress
+            <input name="address" autocomplete="street-address" />
+          </label>
+
+          <label>
+            E-post
+            <input name="email" type="email" autocomplete="email" />
+          </label>
+
+          <label>
+            Mobilnummer
+            <input name="phone" autocomplete="tel" />
+          </label>
+
+          <button type="submit">Boka</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

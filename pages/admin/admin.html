@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="../../css/site.css" />
+    <script type="module" src="../../dist/pages/admin/admin.js" defer></script>
+    <title>WestCoast Education - Admin</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../start/start.html">Start</a>
+        <a href="../courses/courses.html">Kurser</a>
+        <a href="../admin/admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Admin</h1>
+
+      <div id="adminMsg" aria-live="polite" hidden></div>
+
+      <div class="admin-grid" id="adminArea" hidden>
+        <section>
+          <h2>Lägg till kurs</h2>
+
+          <form id="addCourseForm">
+            <label>
+              Titel
+              <input name="title" required />
+            </label>
+
+            <label>
+              Kursnummer
+              <input name="courseNumber" required />
+            </label>
+
+            <label>
+              Antal dagar
+              <input name="days" type="number" min="1" required />
+            </label>
+
+            <label>
+              Kostnad
+              <input name="price" type="number" min="0" required />
+            </label>
+
+            <label>
+              Datum
+              <input name="date" type="date" />
+            </label>
+
+            <label>
+              Form (klassrum/distans)
+              <input name="mode" />
+            </label>
+
+            <label>
+              Bild (sökväg)
+              <input name="image" placeholder="assets/images/3.jpg" />
+            </label>
+
+            <label>
+              Beskrivning
+              <textarea name="description" rows="5"></textarea>
+            </label>
+
+            <button type="submit">Spara kurs</button>
+          </form>
+        </section>
+
+        <section>
+          <h2>Bokningar</h2>
+          <div id="bookingsList"></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
